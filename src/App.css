@@ -1,0 +1,152 @@
+
+.bottom-sheet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: auto;
+  background-color: #f8f3f3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.8s ease-in-out;
+  transform-origin: bottom;
+} 
+ .Edge{
+  padding: 10px;
+  background-color: red;
+  transition: transform 0.10s ease-in-out;
+  transform-origin: bottom;
+}
+.container{
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.container:hover{
+  background-color: #ff5733;
+  transform: scale(1.05);
+}
+.header{
+  width: 120px;
+  height: 5px;
+  border-radius: 40%;
+  background-color: black;
+  margin-top: -12px;
+}
+.bottom-sheet-content {
+  padding: 20px;
+  align-content: center;
+  
+}
+
+.close-button {
+  display: block;
+  color: black;
+  background-color: #f3bcbc;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 13px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.close-button:hover {
+  background-color: red;
+  color: white;
+}
+
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.open-button {
+  background-color: white;
+  color: white;
+  margin: 10px 20px;
+  border: 3px solid blue;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: blue;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.open-button:hover {
+  background-color: #0056b3;
+  padding: 15px 20px;
+  border: none;
+  color: white;
+  transform: scale(1.05);
+  font-weight: 600;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .bottom-sheet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto
+  }
+  .Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 70px;
+    margin-top: 10px;
+  }
+  .open-button {
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+  }
+  .close-button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+  }
+}
